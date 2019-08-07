@@ -35,9 +35,9 @@ body {
 .delivery-block {
   display: flex;
   align-items: center;
-  & span {
-    margin: 0 9px;
-  }
+}
+.delivery-block span {
+  margin: 0 9px;
 }
 
 .delivery-point {
@@ -143,10 +143,9 @@ h1 {
   margin-top: 16px;
   width: 100%;
   height: 100%;
-
-  & img {
-    width: 100%;
-  }
+}
+.product-card img {
+  width: 100%;
 }
 
 .name-product {
@@ -166,12 +165,12 @@ h1 {
 }
 
 .product-card:hover {
-  background-color: rgb(117,117,117,0.05);
+  background-color: rgba(117, 117, 117, 0.05);
   mix-blend-mode: normal;
   transition: 0.5s;
   width: 99%;
   height: 99%;
-  box-shadow: 0 0 10px 5px rgba(221, 221, 221, 1);
+  box-shadow: 0 0 10px 5px #dddddd;
   cursor: pointer;
 }
 
@@ -211,48 +210,17 @@ footer {
   grid-template-rows: repeat(4, 40px);
   justify-items: start;
   align-items: start;
-  grid-template-areas: "row1col1 row1col2 row1col3"
-    ". row2col2 row2col3"
-    ". row3col2 row3col3"
-    ". row4col2 row4col3";
+  grid-template-areas: "row1col1 row1col2 row1col3" ". row2col2 row2col3" ". row3col2 row3col3" ". row4col2 row4col3";
   margin: 39px;
-  & a {
-    text-decoration: none;
-    color: white;
-    font-size: 13px;
-    line-height: 15px;
-  }
-  & a:hover {
-    color: pink;
-  }
 }
-
-.row1col2 {
-  grid-area: row1col2;
+.about-sector a {
+  text-decoration: none;
+  color: white;
+  font-size: 13px;
+  line-height: 15px;
 }
-
-.row2col2 {
-  grid-area: row2col2;
-}
-
-.row3col2 {
-  grid-area: row3col2;
-}
-
-.row1col3 {
-  grid-area: row1col3;
-}
-
-.row2col3 {
-  grid-area: row2col3;
-}
-
-.row3col3 {
-  grid-area: row3col3;
-}
-
-.row4col3 {
-  grid-area: row4col3;
+.about-sector a:hover {
+  color: pink;
 }
 
 .chng_lang {
@@ -345,29 +313,35 @@ footer {
   margin: 40px 0;
   font-size: 11px;
   line-height: 13px;
-  & .privacy-link {
-    text-decoration: none;
-    color: white;
-  }
-  & .privacy-link:hover {
-    color: red;
-  }
+}
+.privacy a {
+  text-decoration: none;
+  color: white;
+}
+.privacy a:hover {
+  color: red;
 }
 
 @media screen and (max-width: 1023px) {
   .line {
     margin: 0 6px;
   }
+
   main {
     padding: 0 7px;
   }
+
   .logo-img {
     margin-left: 6px;
   }
+
   .authorization {
     margin-right: 6px;
   }
+
   footer {
     padding: 56px 6px 0;
   }
 }
+
+/*# sourceMappingURL=main.css.map */

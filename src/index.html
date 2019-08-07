@@ -2,12 +2,160 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Uber Eats</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./styles/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+  <header>
+    <div class="logo-block">
+      <a href="#"><img class="logo-img" src="./images/logo.svg" alt="logo_uber"></a>
+      <form class="delivery-block">
+        <lable>
+          <input class="speed-deliv" type="text" placeholder="ASAP">
+        </lable>
+        <span>to</span>
+        <label class="delivery-point">
+          <img src="./images/location.svg" alt="">
+          <input class="delyvery-type" type="text" placeholder="ul. Tarasivska St, 16">
+        </label>
+      </form>
+      <div class="authorization">
+        <input class="button sign-button" type="button" value="Sign In">
+        <input class="button reg-button" type="button" value="Register">
+        <a class="busket" href="#" alt="buy-busket">
+          <img src="./images/basket.svg" alt="busket">
+        </a>
+      </div>
+    </div>
+  </header>
+  <main>
+      <form  action="https://www.google.com/"  target="_blank">
+        <label class="search">
+          <img src="images/Shape.svg" alt="search">
+          <input class="search-field" type="search" name="search-field" placeholder="Search for restaurant or cuisine" autocomplete="off">
+        </label>
+        <div class="line"></div>
+      </form>
+    <h1>Kyiv Restaurants</h1>
+    <section class="menu">
+      <div class="product-card">
+        <img src="images/95b745f6ce6a45903c3ed254afd72e46-w550-27(8).png" alt="MacDac">
+          <h2 class="name-product">Макдоналдс</h2>
+          <p class="product-type">₴₴ • Бургеры</p>
+          <p class="deliv-time">25 - 35 Min</p>
+      </div>
+      <div class="product-card">
+        <img src="images/95b745f6ce6a45903c3ed254afd72e46-w550-27(5).png" alt="MacDac">
+          <h2 class="name-product">WOKWEI</h2>
+          <p class="product-type">₴ • Китайська • Азіатська</p>
+          <p class="deliv-time">40 - 50 Min</p>
+      </div>
+      <div class="product-card">
+          <img src="images/photo.png" alt="MacDac">
+            <h2 class="name-product">YIZHA</h2>
+            <p class="product-type">₴₴ • Американська • Бургери • Вулична їжа</p>
+            <p class="deliv-time">35 - 45 Min</p>
+        </div>
+        <div class="product-card">
+          <img src="images/95b745f6ce6a45903c3ed254afd72e46-w550-27(1).png" alt="MacDac">
+            <h2 class="name-product">Musafir (вул. Саксаганського)</h2>
+            <p class="product-type">₴₴ • Близькосхідна</p>
+            <p class="deliv-time">30 - 40 Min</p>
+        </div>
+        <div class="product-card">
+          <img src="images/95b745f6ce6a45903c3ed254afd72e46-w550-27(7).png" alt="MacDac">
+            <h2 class="name-product">WOKWEI</h2>
+            <p class="product-type">₴ • Китайська • Азіатська</p>
+            <p class="deliv-time">40 - 50 Min</p>
+        </div>
+        <div class="product-card">
+          <img src="images/95b745f6ce6a45903c3ed254afd72e46-w550-27(6).png" alt="MacDac">
+            <h2 class="name-product">Milk Bar</h2>
+            <p class="product-type">₴₴ • Десерти • Європейська</p>
+            <p class="deliv-time">25 - 35 Min</p>
+        </div>
+        <div class="product-card">
+          <img src="images/95b745f6ce6a45903c3ed254afd72e46-w550-27.png" alt="MacDac">
+            <h2 class="name-product">Mimosa Brooklyn Pizza</h2>
+            <p class="product-type">₴₴ • Італійська • Піца • Американська</p>
+            <p class="deliv-time">15 - 25 Min</p>
+        </div>
+        <div class="product-card">
+          <img src="images/95b745f6ce6a45903c3ed254afd72e46-w550-27(2).png" alt="MacDac">
+            <h2 class="name-product">To Be</h2>
+            <p class="product-type">₴₴ • Японська • Азіатська • Суші</p>
+            <p class="deliv-time">25 - 35 Min</p>
+        </div>
+        <div class="product-card">
+          <img src="images/95b745f6ce6a45903c3ed254afd72e46-w550-27(3).png" alt="MacDac">
+            <h2 class="name-product">Druzi Cafe (вул. Прорізна)</h2>
+            <p class="product-type">₴₴ • Американська • Сучасна європейська • Українська</p>
+            <p class="deliv-time">30 - 40 Min</p>
+        </div>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-logo">
+      <img src="images/white-logo.svg" alt="logo_uber">
+  </div>
+    <div class="footer-line"></div>
+    <div class="about-sector">
+      <div class="lang">
+        <img class="world" src="../images/world.svg" alt="globe">
+        <select class="chng_lang" value="lang">
+          <option name="en">English</option>
+          <option name="rus">Russian</option>
+          <option name="ua">Ukranian</option>
+        </select>
+        <p><span>#</span>UberEats</p>
+        <div class="soc-net-link">
+          <a href="#" class="facebook"><img src="../images/facebook.svg" alt=""></a>
+          <a href="#" class="twitter"><img src="../images/twitter.svg" alt=""></a>
+          <a href="#" class="instagram"><img src="../images/instagram.svg" alt=""></a>
+        </div>
+      </div>
+        <a href="#" class="row1col2">
+          About UberEats
+        </a>
+        <a href="#" class="row2col2">
+          Become a Delivery Partner
+        </a>
+        <a href="#" class="row3col2">
+          Become a Restaurant Partner
+        </a>
+        <a href="#" class="row1col3">
+          See all cities
+        </a>
+        <a href="#" class="row2col3">
+        Pricing
+        </a>
+        <a href="#" class="row3col3">
+          Help
+        </a>
+        <a href="#" class="row4col3">
+        FAQs
+        </a>
+    </div>
+    <div class="footer-line"></div>
+      <div class="app_link">
+        <a href="#" class="app-store">
+          <img src="./images/Download_on_the_App_Store_Badge_US-UK_RGB_blk_092917.png" alt="app-store">
+        </a>
+        <a href="#" class="google-play">
+          <img src="./images/en_badge_web_generic-cf6dad406f.png" alt="google-play">
+        </a>
+        </div>
+    </div>
+
+    <div class="footer-line"></div>
+    <div class="privacy">
+      <a href="#" class="privacy-link">© 2019 Uber Technologies Inc.</a>
+      <a href="#" class="privacy-link">Privacy</a>
+      <a href="#" class="privacy-link">Terms</a>
+    </div>
+  </footer>
   </body>
 </html>
