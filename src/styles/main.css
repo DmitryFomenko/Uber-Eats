@@ -210,7 +210,7 @@ footer {
   grid-template-rows: repeat(4, 40px);
   justify-items: start;
   align-items: start;
-  grid-template-areas: "row1col1 row1col2 row1col3" ". row2col2 row2col3" ". row3col2 row3col3" ". row4col2 row4col3";
+  grid-template-areas: "row1col1 row1col2 row1col3" ". row2col2 row2col3" ". row3col2 row3col3" ". . row4col3";
   margin: 39px;
 }
 .about-sector a {
@@ -221,6 +221,34 @@ footer {
 }
 .about-sector a:hover {
   color: pink;
+}
+
+.row1col2 {
+  grid-area: row1col2;
+}
+
+.row2col2 {
+  grid-area: row2col2;
+}
+
+.row3col2 {
+  grid-area: row3col2;
+}
+
+.row1col3 {
+  grid-area: row1col3;
+}
+
+.row2col3 {
+  grid-area: row2col3;
+}
+
+.row3col3 {
+  grid-area: row3col3;
+}
+
+.row4col3 {
+  grid-area: row4col3;
 }
 
 .chng_lang {
@@ -314,11 +342,11 @@ footer {
   font-size: 11px;
   line-height: 13px;
 }
-.privacy a {
+.privacy .privacy-link {
   text-decoration: none;
   color: white;
 }
-.privacy a:hover {
+.privacy .privacy-link:hover {
   color: red;
 }
 
