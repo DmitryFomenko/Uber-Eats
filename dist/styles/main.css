@@ -274,9 +274,6 @@ footer {
   grid-area: row4col3; }
 
 .chng_lang {
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
   color: white;
   background: url(../images/Shape.svg);
   background-repeat: no-repeat;
@@ -289,7 +286,8 @@ footer {
   background-color: #3b3b3b;
   width: 100%;
   height: 40px;
-  padding-left: 48px; }
+  padding-left: 48px;
+  -webkit-appearance: none; }
 
 .lang {
   background-color: #3b3b3b;
