@@ -300,7 +300,7 @@ footer {
   margin-top: 33px;
   cursor: default; }
 
-.world {
+.lang svg {
   position: absolute;
   margin: 12px 16px; }
 
@@ -322,7 +322,10 @@ footer {
   background: linear-gradient(to top, #a696ff, #2649e6); }
 
 .instagram {
-  margin-left: 8px; }
+  margin-left: 8px;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1; }
 
 .instagram img:hover {
   border-radius: 15%;
