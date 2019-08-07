@@ -201,8 +201,8 @@ h1 {
   transition: 0.5s;
   width: 99%;
   height: 99%;
-  -webkit-box-shadow: 0 0 10px 5px #ddd;
-          box-shadow: 0 0 10px 5px #ddd;
+  -webkit-box-shadow: 0 0 10px 5px #dddddd;
+          box-shadow: 0 0 10px 5px #dddddd;
   cursor: pointer; }
 
 .menu {
