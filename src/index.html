@@ -7,21 +7,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
     <link rel="stylesheet" href="./styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(function() {
-      $(window).scroll(function() {
-      if($(this).scrollTop() > 500) {
-      $('#toTop').fadeIn();
-      } else {
-      $('#toTop').fadeOut();
-      }
-      });
-      $('#toTop').click(function() {
-      $('body,html').animate({scrollTop:0},300);
-      });
-      });
-    </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   </head>
   <body>
   <header>
@@ -188,5 +174,6 @@
     </div>
   </footer>
   <div id="toTop"></div>
+  <script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>
