@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 header {
   position: fixed;
   width: 100%;
@@ -232,11 +236,12 @@ footer {
   grid-template-rows: repeat(4, 40px);
   justify-items: start;
   align-items: start;
+  column-gap: 5px;
   grid-template-areas: "row1col1 row1col2 row1col3"
     ". row2col2 row2col3"
     ". row3col2 row3col3"
     ". . row4col3";
-  margin: 39px;
+  margin: 39px 0;
   & a {
     text-decoration: none;
     color: white;
@@ -444,9 +449,7 @@ footer {
   .reg-button {
     margin-left: 12px;
   }
-  .busket {
-    display: none;
-  }
+
   .search-small {
     box-sizing: border-box;
     display: flex;
@@ -522,5 +525,31 @@ footer {
     & a {
       margin-bottom: 24px;
     }
+  }
+  #toTop {
+    width: 75%;
+    height: 75%;
+  }
+}
+
+@media screen and(max-width: 800px) {
+  .busket {
+    display: none;
+  }
+}
+
+#toTop {
+  position: fixed;
+  bottom: 24px;
+  right: 16px;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  background: url(../images/btn-up.png) 50% 50% no-repeat;
+  border-radius: 2px;
+  display: none;
+  z-index: 1;
+  &:hover {
+    opacity: 0.8;
   }
 }
