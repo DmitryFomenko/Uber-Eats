@@ -14,8 +14,9 @@ body {
 
 .header-block {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 72px;
+  grid-column-gap: 20px;
   align-items: center;
   box-sizing: border-box;
   height: 72px;
@@ -29,7 +30,15 @@ body {
 
 .destination {
   margin-left: 12px;
-  border: none;
+  background-image: url(../images/location.svg);
+  background-repeat: no-repeat;
+  background-position: 12px center;
+  border: 1px solid #e0e0e0;
+  box-sizing: border-box;
+  border-radius: 2px;
+  padding-left: 36px;
+  width: 100%;
+  height: 40px;
 }
 
 .delivery-block {
@@ -39,17 +48,6 @@ body {
 }
 .delivery-block span {
   margin: 0 9px;
-}
-
-.delivery-point {
-  display: flex;
-  align-items: center;
-  border: 1px solid #e0e0e0;
-  box-sizing: border-box;
-  border-radius: 2px;
-  padding: 8px;
-  width: 292px;
-  height: 40px;
 }
 
 .speed-delivery {
@@ -461,39 +459,45 @@ footer {
   }
 
   .header-block {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: normal;
-    height: 72px;
-    width: 100%;
-    padding: 0 4px;
     box-shadow: 0 0 16px 0 rgba(38, 38, 38, 0.16);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 72px 90px 20px 40px;
+    column-gap: 0;
+    row-gap: 20px;
+  }
+
+  .destination {
+    margin: 0;
   }
 
   .logo-img {
-    width: 106px;
-    margin: 28px 0 0 4px;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
   }
 
   .delivery-block {
-    width: 100%;
+    width: 96%;
     margin: 8px 0 40px 8px;
-    order: 10;
-  }
-
-  .delivery-point {
-    margin-right: 8px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 4;
+    grid-row-end: 5;
   }
 
   .authorization {
-    order: 2;
-    margin: -28px 0 0 auto;
+    grid-column-start: 2/3;
   }
 
   .search-block-mobil {
     display: initial;
-    order: 3;
+    margin-right: 6px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
   }
 
   .reg-button {
@@ -537,7 +541,10 @@ footer {
   }
 
   .whenTo {
-    order: 9;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
   }
 
   .when-mobile {
