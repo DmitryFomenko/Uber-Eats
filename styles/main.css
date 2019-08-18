@@ -29,7 +29,6 @@ body {
 }
 
 .destination {
-  margin-left: 12px;
   background-image: url(../images/location.svg);
   background-repeat: no-repeat;
   background-position: 12px center;
@@ -433,10 +432,6 @@ footer {
 
   .delivery-point {
     width: 100%;
-  }
-
-  .delivery-block {
-    margin: 0 15px;
   }
 
   footer {
